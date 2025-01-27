@@ -1,4 +1,4 @@
-window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
+document.addEventListener('DOMContentLoaded', window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
   const fetchApi = async (id) => {
     try {
       const res = await fetch(`https://post-summary.yukta.one/api/quiz/${id}`);
@@ -145,5 +145,5 @@ window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
   };
 
   RenderQuizBanner(id, targetSelector);
-};
+});
 
