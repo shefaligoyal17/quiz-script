@@ -28,7 +28,9 @@ const loadGoogleFont = () => {
 loadGoogleFont()
 loadCSS('https://shefaligoyal17.github.io/quiz-script/quiz-style.css'); // Replace with your hosted CSS file URL
 
-window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
+window.QuizNamespace = window.QuizNamespace || {};
+
+window.QuizNamespace.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
   const fetchApi = async (id) => {
     try {
       const res = await fetch(`https://post-summary.yukta.one/api/quiz/${id}`);
