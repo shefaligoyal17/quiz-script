@@ -116,7 +116,7 @@ window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
 
     const headingIcon = document.createElement('div')
     headingIcon.classList.add('section-heading-icon')
-    headingIcon.innerHTML = '<img alt="#" data-src="assets/img/Sun.gif" class=" lazyloaded" src="assets/img/Sun.gif">'
+    headingIcon.innerHTML = '<img alt="#" data-src="https://raw.githubusercontent.com/shefaligoyal17/quiz-script/refs/heads/main/assets/img/Sun.gif" class=" lazyloaded" src="https://raw.githubusercontent.com/shefaligoyal17/quiz-script/refs/heads/main/assets/img/Sun.gif">'
 
     headingContent.appendChild(headingText)
     headingContent.appendChild(headingIcon)
@@ -206,17 +206,17 @@ window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
           if (correctOption === selectedOption) {
             selectedOptionElement.style.backgroundColor = '#9feb8e';
             selectedOptionElement.style.color = '#000000';
-            selectedOptionElement.innerHTML = `${selectedOption}<span class="list-icon1"><img src="assets/img/tick.svg" alt="tick" /></span>`
+            selectedOptionElement.innerHTML = `${selectedOption}<span class="list-icon1"><img src="https://raw.githubusercontent.com/shefaligoyal17/quiz-script/bf354b81846122f19438cb627b1af0bd44e37414/assets/img/tick.svg" alt="tick" /></span>`
           }
           else {
             selectedOptionElement.style.backgroundColor ='#fca7a1';
             selectedOptionElement.style.color = '#000000';
-            selectedOptionElement.innerHTML = `${selectedOption}<span class="list-icon1"><img src="assets/img/cross.svg" alt="tick" /></span>`
+            selectedOptionElement.innerHTML = `${selectedOption}<span class="list-icon1"><img src="https://raw.githubusercontent.com/shefaligoyal17/quiz-script/bf354b81846122f19438cb627b1af0bd44e37414/assets/img/cross.svg" alt="tick" /></span>`
             const correctOptionElement = document.getElementById(`option-${quiz.options.indexOf(correctOption)}-${bannerId}`);
             correctOptionElement.style.backgroundColor = '#9feb8e';
             correctOptionElement.style.color = '#000000';
             correctOptionElement.style.borderColor = 'transparent';
-            correctOptionElement.innerHTML = `${correctOption}<span class="list-icon1"><img src="assets/img/tick.svg" alt="tick" /></span>`
+            correctOptionElement.innerHTML = `${correctOption}<span class="list-icon1"><img src="https://raw.githubusercontent.com/shefaligoyal17/quiz-script/bf354b81846122f19438cb627b1af0bd44e37414/assets/img/tick.svg" alt="tick" /></span>`
           }
 
           //remove event listener from all options
