@@ -26,7 +26,7 @@ const loadGoogleFont = () => {
 
 // Load the CSS file
 loadGoogleFont()
-loadCSS('quiz-style.css'); // Replace with your hosted CSS file URL
+loadCSS('https://shefaligoyal17.github.io/quiz-script/quiz-style.css'); // Replace with your hosted CSS file URL
 
 window.GetQuizBanner = (id, targetSelector = '#my-custom-container') => {
   const fetchApi = async (id) => {
